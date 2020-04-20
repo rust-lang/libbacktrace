@@ -869,7 +869,7 @@ macho_add_dsym (struct backtrace_state *state, const char *filename,
 	     + basenamelen
 	     + dsymsuffixdirlen
 	     + basenamelen
-	     + 1);
+	     + 2);
   dsym = backtrace_alloc (state, dsymlen, error_callback, data);
   if (dsym == NULL)
     goto fail;
